@@ -176,7 +176,7 @@ elif st.session_state.page == "select":
 
             st.markdown(
                 """
-                <meta http-equiv="refresh" content="0; url=https://finetune-10mslm.streamlit.app/" />
+                <meta http-equiv="refresh" content="0; url=finetune-10mslm.streamlit.app" />
                 """,
                 unsafe_allow_html=True
             )
