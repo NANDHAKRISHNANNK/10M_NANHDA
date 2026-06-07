@@ -174,12 +174,11 @@ elif st.session_state.page == "select":
         if st.button("Use Fine-Tuned Model", use_container_width=True):
             st.markdown(" Redirecting to Fine-Tuned Model...")
 
-            st.markdown(
-                """
-                <meta http-equiv="refresh" content="0; url=finetune-10mslm.streamlit.app" />
-                """,
-                unsafe_allow_html=True
-            )
+            st.markdown("""
+    <script>
+        window.location.href = "https://finetune-10mslm.streamlit.app/";
+    </script>
+    """, unsafe_allow_html=True)
             st.stop()
 
     # ---------------- INTERNET MODEL ----------------
